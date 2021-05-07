@@ -1,0 +1,2 @@
+- si nécessaire, installer les dépendances (avec composer par exemple)
+- si nécessaire, configurer le thème
