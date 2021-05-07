@@ -17,7 +17,6 @@ Text Domain: ecfwordpress
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -25,6 +24,7 @@ html {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: lightgray;
 }
 
@@ -38,10 +38,6 @@ body {
 .navbar {
     background-color: #252422;
     padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     align-items: center;
 }
@@ -75,24 +71,70 @@ body {
     text-decoration: none;
 }
 
+.container {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.title{
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.seperator {
+    width: 50%;
+    height: 1px;
+    background-color: gray;
+    margin: 0 auto;
+}
 
 /* Article */
+.articles {
+    display: grid;
+    grid-gap: 20px;
+    margin: 50px 0;
+}
+.wp-post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+}
 
-.articles {}
+.article_date {
+    margin: 0 0 10px;
+}
 
+.article_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article_content {
+    margin: 10px 0;
+}
+
+/* Single page */
 
 /* Footer */
 
 .footer {
     background-color: #252422;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 10px;
 }
 
 .footer_copyright {
     text-align: center;
     color: #fff;
+}
+
+@media screen and (min-width: 425px) {
+    .container {
+        width: 50%;
+    }
 }
