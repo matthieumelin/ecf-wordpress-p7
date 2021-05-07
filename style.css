@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /*
 Theme Name: ECF Wordpress
 Theme URI: https://github.com/matthieumelin/ecf-wordpress-p7/
@@ -11,3 +13,86 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ecfwordpress
 */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightgray;
+}
+
+
+/* Header */
+
+.header {
+    background-color: red;
+}
+
+.navbar {
+    background-color: #252422;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_brand {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar_brand_logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.navbar_brand_link,
+.navbar_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar_menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar_menu_link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Article */
+
+.articles {}
+
+
+/* Footer */
+
+.footer {
+    background-color: #252422;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.footer_copyright {
+    text-align: center;
+    color: #fff;
+}

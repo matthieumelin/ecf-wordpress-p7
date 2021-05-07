@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
+get_header();
 
-<body>
-	<?php
-	if (have_posts()) :
-		while (have_posts()) : the_post();
-			the_content();
-		endwhile;
-	endif;
-	?>
-</body>
+if (have_posts()) :
+	while (have_posts()) :
+		the_post();
+?>
+		<article class="article">
+			<h2 class="article_title"><?php the_title(); ?></h2>
+			<div class="article_thumbnail"><?php the_post_thumbnail(); ?></div>
+			<div class="article_content"><?php the_content(); ?></div>
+		</article>
+<?php
+	endwhile;
+endif;
 
-</html>
+get_footer();
