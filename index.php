@@ -8,8 +8,6 @@ $lastposts = get_posts(array(
 
 ?>
 <div class="container">
-	<h1 class="title">Liste des articles</h1>
-	<div class="seperator"></div>
 	<div class="articles">
 		<?php
 		if ($lastposts) {
@@ -17,7 +15,7 @@ $lastposts = get_posts(array(
 				setup_postdata($post); ?>
 				<article class="article">
 					<h2 class="article_title"><a href="<?php the_permalink(); ?>" class="article_link"><?php the_title(); ?></a></h2>
-					<div class="article_date"><?php the_date(); ?></div>
+					<div class="article_infos">Posté le <?php the_date(); ?> par <?php the_author(); ?></div>
 					<div class="article_thumbnail"><?php the_post_thumbnail(); ?></div>
 				</article>
 		<?php

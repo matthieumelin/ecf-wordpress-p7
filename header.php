@@ -19,10 +19,5 @@
                 <a href="/" class="navbar_brand_link"><?php the_custom_logo(); ?></a>
             </div>
             <a href="/" class="navbar_link"><?php bloginfo("name"); ?></a>
-            <ul class="navbar_menu">
-                <li class="navbar_menu_item">
-                    <a href="#" class="navbar_menu_link">Accueil</a>
-                </li>
-            </ul>
         </nav>
     </header>
