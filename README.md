@@ -1,3 +1,5 @@
+## ECF Wordpress P7
+
 # si nécessaire, installer les dépendances (avec composer par exemple)
 - J'ai installé XAMPP sur mon ordinateur ce qui m'a servi pour le serveur PHP, Apache, MySQL et PhpMyAdmin, pour Wordpress je l'ai téléchargé sur le site officiel et dézippé et mis dans mon htdocs de XAMPP.
 
